@@ -28,4 +28,18 @@ class Program
         // Создаем массив нужного размера и копируем в него результаты
         string[] finalResult = new string[count];
         Array.Copy(result, 0, finalResult, 0, count);
+        
+         // Выводим результат
+        Console.Write("[");
+        for (int i = 0; i < finalResult.Length; i++)
+        {
+            Console.Write("\"" + finalResult[i] + "\"");
+            if (i < finalResult.Length - 1)
+            {
+                Console.Write(", ");
+            }
+        }
+        Console.WriteLine("]");
+    }
+}
 
